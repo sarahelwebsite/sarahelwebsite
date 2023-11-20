@@ -28,7 +28,7 @@
           data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
           data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
           data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
-          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          data-xxl-stick-up-offset="46px" data-lg-stick-up="false" data-xl-stick-up="false" data-xxl-stick-up="false">
           <div class="rd-navbar-main-outer">
             <div class="rd-navbar-main">
               <!--RD Navbar Panel-->
@@ -75,8 +75,8 @@
         <div class="container wide">
           <div>
             <div>
-              <div class="btn-wrap">
-                <div class="group-xxl group-middle"><a class="button button-white button-round-2 btn-wrap custom-home-page" href="Projects.html"
+              <div class="explore">
+                <a class="" href="Projects.html"
                     data-caption-animate="fadeInUp" data-caption-delay="450">Explore <br />Projects</a></div>
               </div>
             </div>
@@ -86,28 +86,31 @@
     </div>
 
     <!-- Services-->
-    <div class="section section section-lg">
-      <div class="container wide">
-        <div class="text-wrap">
-          <div class="row row-md-30">
-            <div class="col-md-4 col-lg-4"><img src="images/Homepage-(2).jpeg" alt="" width="420" height="100%" />
-            </div>
-            <div class="col-md-8 col-lg-8">
-              <div class="mt-4">
-                <h3 class="title">Sarah ÈL Designs
-                  specializes in creating
-                  gorgeous & functional
-                  Residential Interiors</h3>
-                <div class="subtitle-2">We love to see that satisfaction of love and contentment on our client's face
-                  which is our biggest win! We tend to visualize our client's (YOUR) needs and requirements into a
-                  beautiful story that would incorporate YOU as the main character and build a space that reflects and
-                  says for itself.</div>
+    
+    <section class="sectionAbt about-section " id="about">
+      <div class="">
+          <div class="row align-items-center justify-content-around flex-row-reverse">
+              <div class="col-lg-6">
+                  <div class="about-text">
+                      <h3 class="dark-color">Sarah ÈL Designs</h3>
+                      <h4 class="theme-color">Specializes in creating
+                        gorgeous  &amp;functional
+                        Residential Interiors</h4>
+                      <p>We love to see that satisfaction of love and contentment on our client's face which is our biggest win! We tend to visualize our client's (YOUR) needs and requirements into a beautiful story that would incorporate YOU as the main character and build a space that reflects and says for itself.</p>
+                      <div class="btn-bar">
+                          <a class="px-btn theme" href="./about.html">View More</a>
+                          <a class="px-btn theme-t" href="./contacts.html">Contact</a>
+                      </div>
+                  </div>
               </div>
-            </div>
+              <div class="col-lg-5 text-center">
+                  <div class="about-img">
+                      <img src="./images/Homepage-(2).jpeg" >
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
+  </section>
     <!--Testimonials-->
     <div class="section section-lg bg-gray-150">
       <div class="text-center">
@@ -210,38 +213,78 @@
     </div>
   </div>
 
-  <footer class="section footer-classic context-dark">
-    <div class="wide">
-      <div class="rd-navbar-brand">
-        <!--Brand-->
-        <center>
-          <img  src="images/footerlogo.jpg" alt="" width="400" height="400" class="custom-footer-image" />
-        </center>
-      </div>
-      <div style="background: linear-gradient(to right, #030507, #6a6b6e);text-align: center;">
-        <div>
-          <p>
-            To know more about Designing and upcoming offers,<br />
-            GET IN TOUCH WITH US TODAY!
+  <!-- Site footer -->
+  <div class="fbanner"><p>SEND US AN INQUIRY WE WILL GET BACK TO YOU</p><a href="mailto:info@saraheldesigns.com?subject=Need%20a%20quotation"><button>SEND INQUIRY</button></a></div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-3">
+          <!-- <h6>Categories</h6> -->
+          <!-- <ul class="footer-links"> -->
+            <img src=".\images\footer_logo.png" style="width:250px; height: auto; vertical-align: middle;"/>
+          <!-- </ul> -->
+        </div>
+        <div class="col-sm-12 col-md-5">
+          <h6>About</h6>
+          <p class="text-justify">
+            Hi, my lovely readers! I’m Sarah, a one-woman army that’s been
+            running Sarah ÈL Design studio with all her heart and soul. This
+            brand means a lot to me as ÈL especially derives from my
+            mother’s name which I have already manifested it to take it to
+            the top with top-notch quality work and a gorgeous space that my
+            clients would love to be in.
           </p>
         </div>
-        <br />
-        <ul class="group-xl group-middle">
-          <a href="https://www.instagram.com/yourpage" target="_blank">
-            <img src="images/insta.jpeg" alt="Instagram" height="50" width="50"/>
-        </a>
-        <a href="https://www.facebook.com/yourpage" target="_blank">
-            <img src="images/fb-logo.png" alt="Facebook"  height="50" width="50">
-        </a>
-        <a href="mailto:info@saraheldesigns.com">
-            <img src="images/gmail-logo.png" alt="Gmail"  height="50" width="70">
-        </a>
-        <a href="https://wa.me/+1 647 333 7127" target="_blank">
-            <img src="images/wp-logo.jpeg" alt="WhatsApp"  height="50" width="50">
-        </a>
-        </ul>
-        <div>
 
+       
+
+        <div class="col-xs-6 col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./OurMethod.html">Our Method</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+          </ul>
+        </div>
+      </div>
+      <br>
+    </div>
+    <hr />
+
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">
+            Copyright &copy; 2023 All Rights Reserved by
+            <a href="#">Sarah El Designs</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li>
+              <a class="facebook" href="#"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a class="google" href="#"><i class="fa fa-envelope"></i></a>
+            </li>
+            <li>
+              <a class="dribbble" href="#"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a class="whatsapp" href="#"
+                ><i class="fa fa-whatsapp"></i
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

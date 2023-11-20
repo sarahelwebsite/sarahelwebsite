@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init("QxrHVtx8M-ZU4jPXE");
+    // Your email template ID
+    var templateId = "template_6mx37na";
+  </script>
 </head>
 
 <body>
@@ -27,7 +33,7 @@
           data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
           data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
           data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
-          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          data-xxl-stick-up-offset="46px" data-lg-stick-up="false" data-xl-stick-up="false" data-xxl-stick-up="false">
           <div class="rd-navbar-main-outer">
             <div class="rd-navbar-main">
               <!--RD Navbar Panel-->
@@ -71,71 +77,116 @@
         </div>
     </section>
     <!--Mailform-->
-    <div class="row container contact">
-      <div class="col-md-4">
-        <div class="custom-contact-div">
-          <img src="images/email-logo.png" height="50" width="50" alt="Email"/>
-          <P>Email</P>
-          </br>
-          <a href="mailto:info@saraheldesigns.com">info@saraheldesigns.com</a>
-
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="custom-contact-div">
-          <img src="images/location-icon.png" height="50" width="50" alt="Email"/>
-          <P>Address</P>
-          </br>
-          <a href="https://www.google.com/maps?q=149 Aylesworth Ave
-          Toronto, M1N 2J8" target="_blank">149 Aylesworth Ave
-            Toronto, M1N 2J8</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="custom-contact-div">
-          <img src="images/call-logo1.png" height="50" width="50" alt="Email"/>
-          <P>Phone</P>
-          </br>
-          <a href="tel:+16473337127">+1 647 333 7127</a>
-        </div>
-      </div>
+    <div class="">
+      <div class="contactFrm" style="margin-top: 0px;">
+        <div class="container">
+          <div class="contact-parent">
+            <div class="contact-child child1">
+              <p class="txt">Address 
+                <br><span>
+                  <a href="https://maps.app.goo.gl/2VHqNe7hohC5kE7L6" target="_blank">  149 Aylesworth Ave
+                    , <br>Scarborough, ON M1N 2J8,<br>                               
+                    <br></a></span></p>
+                    <p class="txt">Let's Talk <br><span><a href="tel:+1 647 333 7127">+1(647)333-7127</a></span></p>
+                    <p class="txt">General Inquiry <br><span><a href="mailto:info@saraheldesigns.com">info@saraheldesigns.com</a></span></p></div>
+                    <div class="contact-child child2">
+                      <div class="inside-contact">
+                        <h2>Get In Touch</h2>
+                        <h3><span id="confirm"></span></h3>
+                        <form id="contactForm">
+                          <p>Name *</p><input id="txt_name" type="text" name="user_name" required="required">
+                          <p>Email *</p><input id="txt_email" type="text" name="user_email" required="required">
+                          <p>Phone *</p><input id="txt_phone" type="text" name="number" required="required">
+                          <p>Subject *</p><input id="txt_subject" type="text" name="subject" required="required">
+                          <p>Message *</p><textarea id="txt_message" rows="4" name="message" cols="20" required="required"></textarea>
+                          <button class="contactFormBtn" type="button" onclick="sendEmail()">Submit</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.395346370799!2d-79.2661678238206!3d43.70233247109982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cef5b6797629%3A0xf55cec888c97fb7e!2s149%20Aylesworth%20Ave%2C%20Scarborough%2C%20ON%20M1N%202J8!5e0!3m2!1sen!2sca!4v1699785341788!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
     </div>
-      <div class="cnotac-goolelink">
+      <!-- <div class="cnotac-goolelink">
         <a class="custom-googlink-div" href="https://docs.google.com/forms/d/e/info@saraheldesigns.com/viewform" target="_blank" >Please fill out the form and We would love to hear more about your dream project!</a>
-      </div>
+      </div> -->
+    <!-- contact form -->
     
-      <footer class="section footer-classic context-dark">
-        <div class="wide">
-          <div class="rd-navbar-brand">
-            <!--Brand-->
-            <center>
-              <img  src="images/footerlogo.jpg" alt="" width="400" height="400" class="custom-footer-image" />
-            </center>
-          </div>
-          <div style="background: linear-gradient(to right, #030507, #6a6b6e);text-align: center;">
-            <div>
-              <p>
-                To know more about Designing and upcoming offers,<br />
-                GET IN TOUCH WITH US TODAY!
+       <!-- Site footer -->
+    <div class="fbanner"><p>SEND US AN INQUIRY WE WILL GET BACK TO YOU</p><a href="mailto:info@saraheldesigns.com?subject=Need%20a%20quotation"><button>SEND INQUIRY</button></a></div>
+
+       <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <!-- <h6>Categories</h6> -->
+              <!-- <ul class="footer-links"> -->
+                <img src=".\images\footer_logo.png" style="width:250px; height: auto; vertical-align: middle;"/>
+              <!-- </ul> -->
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <h6>About</h6>
+              <p class="text-justify">
+                Hi, my lovely readers! I’m Sarah, a one-woman army that’s been
+                running Sarah ÈL Design studio with all her heart and soul. This
+                brand means a lot to me as ÈL especially derives from my
+                mother’s name which I have already manifested it to take it to
+                the top with top-notch quality work and a gorgeous space that my
+                clients would love to be in.
               </p>
             </div>
-            <br />
-            <ul class="group-xl group-middle">
-              <a href="https://www.instagram.com/yourpage" target="_blank">
-                <img src="images/insta.jpeg" alt="Instagram" height="50" width="50"/>
-            </a>
-            <a href="https://www.facebook.com/yourpage" target="_blank">
-                <img src="images/fb-logo.png" alt="Facebook"  height="50" width="50">
-            </a>
-            <a href="mailto:info@saraheldesigns.com">
-                <img src="images/gmail-logo.png" alt="Gmail"  height="50" width="70">
-            </a>
-            <a href="https://wa.me/+1 647 333 7127" target="_blank">
-                <img src="images/wp-logo.jpeg" alt="WhatsApp"  height="50" width="50">
-            </a>
-            </ul>
-            <div>
-    
+
+           
+
+            <div class="col-xs-6 col-md-4">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./OurMethod.html">Our Method</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+              </ul>
+            </div>
+          </div>
+          <br>
+        </div>
+        <hr />
+
+        <div class="container">
+          <br>
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">
+                Copyright &copy; 2023 All Rights Reserved by
+                <a href="#">Sarah El Designs</a>.
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li>
+                  <a class="facebook" href="#"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="google" href="#"><i class="fa fa-envelope"></i></a>
+                </li>
+                <li>
+                  <a class="dribbble" href="#"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="whatsapp" href="#"
+                    ><i class="fa fa-whatsapp"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -144,7 +195,28 @@
   <div class="snackbars" id="form-output-global"></div>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
-  <!--coded by dyoma-->
+
+  <script>
+    function sendEmail() {
+      var form = document.getElementById("contactForm");
+      var templateParams = {
+        subject: form.elements["subject"].value,
+        user_name: form.elements["user_name"].value,
+        user_email: form.elements["user_email"].value,
+        number: form.elements["number"].value,
+        message: form.elements["message"].value
+      };
+
+      emailjs.send("default_service", templateId, templateParams)
+        .then(function(response) {
+          alert("Email sent successfully", response);
+          // Optionally, reset the form after successful submission
+          form.reset();
+        }, function(error) {
+          console.error("Error sending email", error);
+        });
+    }
+  </script>
 </body>
 
 </html>
